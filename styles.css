@@ -42,11 +42,9 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-<<<<<<< Updated upstream
-=======
 }
 
-/* CUSTOM CSS *?
+/* CUSTOM CSS */
 
 /* HOME PAGE*/
 
@@ -68,11 +66,14 @@ body{
     margin: 35vh 0vh;
 }
 
-form{
-    background-color: blue;
-}
-
 #movie-title{
     height: 3em;
->>>>>>> Stashed changes
+    width: 25vw;
+    font-size: 1.2em;
+    padding-left: 4px;
+}
+
+#submit-button{
+    height: 3em;
+    font-size: 1.2em;
 }
