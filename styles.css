@@ -42,4 +42,37 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+<<<<<<< Updated upstream
+=======
+}
+
+/* CUSTOM CSS *?
+
+/* HOME PAGE*/
+
+body{
+    background-image: url(Images/curtain.png);
+    background-repeat: no-repeat;
+    background-color: #800000;
+    background-attachment: fixed;
+    margin: auto;
+
+}
+
+#center{
+    height: 30vh;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35vh 0vh;
+}
+
+form{
+    background-color: blue;
+}
+
+#movie-title{
+    height: 3em;
+>>>>>>> Stashed changes
 }
