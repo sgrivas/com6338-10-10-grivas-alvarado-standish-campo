@@ -49,7 +49,7 @@ table {
 /* HOME PAGE*/
 
 body{
-    background-image: url(Images/curtain.png);
+   /* background-image: url(Images/curtain.png);*/
     background-repeat: no-repeat;
     background-color: #800000;
     background-attachment: fixed;
@@ -77,3 +77,66 @@ body{
     height: 3em;
     font-size: 1.2em;
 }
+
+/* MOVIE PAGE */
+
+header{
+    background-color: white;
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: maroon;
+}
+  
+header ul li {
+    float: right;
+}
+  
+li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: rgb(91, 2, 2);
+}
+
+
+@media screen and (min-width: 900px){
+    #movie-info{
+        display: flex;
+    }
+    
+    #poster-section{
+        flex: 1;
+        background-color: white;
+    }
+    
+    #trailer-section{
+        flex: 2;
+        background-color: green;
+    }
+}
+@media screen and (max-width: 900px){
+    #movie-info{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#poster-section{
+    background-color: white;
+}
+
+#trailer-section{
+    background-color: green;
+}
+
