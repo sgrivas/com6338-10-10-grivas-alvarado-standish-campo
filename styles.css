@@ -50,11 +50,43 @@ table {
 
 body{
    /* background-image: url(Images/curtain.png);*/
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 2em;
+}
+
+h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+ul li a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+/* HOME PAGE*/
+
+body{
+    background-image: url(Images/curtain.png);
     background-repeat: no-repeat;
     background-color: #800000;
     background-attachment: fixed;
     margin: auto;
 
+}
+
+main h1{
+    text-align: center;
+    color: floralwhite;
+    padding-top: 15vh;
 }
 
 #center{
@@ -63,7 +95,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 35vh 0vh;
+    margin: 25vh 0vh;
 }
 
 #movie-title{
@@ -71,11 +103,23 @@ body{
     width: 25vw;
     font-size: 1.2em;
     padding-left: 4px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
 }
 
 #submit-button{
     height: 3em;
     font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    background-color: floralwhite;
+}
+
+#submit-button:hover {
+    background-color: rgb(91, 2, 2);
+    color: floralwhite;
 }
 
 /* MOVIE PAGE */
