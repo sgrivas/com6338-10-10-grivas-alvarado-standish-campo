@@ -8,7 +8,6 @@ form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const userQuery=form.movietitle.value
     const nameCleaned = userQuery.replace(/\s/g, '+')
-    console.log(nameCleaned);
     if (!userQuery) return
     const fetchURL = `http://www.omdbapi.com/?t=${nameCleaned}&apikey=502c8ecb`
     try {
@@ -31,3 +30,4 @@ const renderedMovie = ({
     <h2>${Title}</h2>
     `
 }
+
