@@ -1,6 +1,5 @@
 const form = document.getElementById('movie-form');
 const center=document.getElementById('center');
-const filmInfo=document.getElementById('film-info'); //from film page
 const movieInfo=document.getElementById('movieinfo'); //from film page
 
 
@@ -15,7 +14,10 @@ form.addEventListener('submit', async (e) => {
         const res = await fetch(fetchURL)
         if (res.status !== 200) throw new Error('Movie not found')
         const data = await res.json()
-        renderedMovie(data);
+        //console.log(data)
+        localStorage.setItem("film", JSON.stringify(data))
+        //renderedMovie(data);
+        location = "film.html"
     } catch (error) {
         // center.innerHTML=''
         // center.textContent=error.message
@@ -24,10 +26,5 @@ form.addEventListener('submit', async (e) => {
     }
 })
 
-const renderedMovie = ({
-    Title,
-}) => {
-    movieInfo.innerHTML=`
-    <h2>${Title}</h2>
-    `
-}
+
+
