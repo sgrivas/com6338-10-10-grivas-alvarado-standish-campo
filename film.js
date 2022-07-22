@@ -5,12 +5,20 @@ const renderedMovie = ({
     Poster,
     Year,
     Director,
-    Country,
+    Actors,
+    Plot,
+    Country
 
 }) => {
     filmInfo.innerHTML=`
     <h2>${Title}</h2>
-    <img src="${Poster}"/> `
+    <img src="${Poster}"/> 
+    <p>${Year}</p>
+    <p>${Director}</p>
+    <p>${Actors}</p>
+    <p>${Plot}</p>
+    <p>${Country}</p>`
+
 }
 
 
