@@ -137,6 +137,21 @@ footer, p {
     font-size: 3em;
 }
 
+
+/***** Theaters-Info Styling *******/
+#theaters{
+    display: grid;
+    padding: 50px;
+    gap: 20px;
+    color: white;
+}
+#theaters > div{
+    display: flex;
+}
+#theaters img{
+    padding-right: 20px;
+}
+
 /****** STICKY FOOTER START ******/
 .site {
     display: flex;

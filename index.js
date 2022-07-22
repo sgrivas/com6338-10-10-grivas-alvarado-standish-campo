@@ -9,7 +9,7 @@ form.addEventListener('submit', async (e) => {
     const nameCleaned = userQuery.replace(/\s/g, '+')
     console.log(nameCleaned);
     if (!userQuery) return
-    const fetchURL = `http://www.omdbapi.com/?t=${nameCleaned}&apikey=502c8ecb`
+    const fetchURL = `https://www.omdbapi.com/?t=${nameCleaned}&apikey=502c8ecb`
     try {
         const res = await fetch(fetchURL)
         if (res.status !== 200) throw new Error('Movie not found')
