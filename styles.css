@@ -124,6 +124,19 @@ footer, p {
     justify-content: space-between;
 }
 
+/***** Film-Info Styling *******/
+
+
+#film-info p {
+    color: white;
+    font-size: 1.2em;
+}
+
+#film-info h2 {
+    color: white;
+    font-size: 3em;
+}
+
 /****** STICKY FOOTER START ******/
 .site {
     display: flex;
