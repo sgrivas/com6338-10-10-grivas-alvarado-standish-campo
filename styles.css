@@ -16,8 +16,8 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
+    /* font-size: 100%; */
+    /* font: inherit; */
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -54,6 +54,37 @@ body{
     background-size: cover;
 }
 
+header {
+    background-color: rgba(245, 245, 245);
+    padding: 30px 0px 30px 15px;
+}
+
+nav ul {
+    margin-right: 1.5%;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    padding: 0 20px;
+    margin-top: -1%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p, button, ::placeholder, a {
+    font-family: 'Poppins', sans-serif;
+}
+
 #center{
     background-color: rgba(245, 245, 245);
     display: grid;
@@ -62,9 +93,19 @@ body{
     margin: 35vh 0vh;
     padding: 7% 15%;
 }
+
+#center p {
+    font-size: 1.5em  
+}
+
 #movie-title{
     height: 3em;
 }
+
+#movie-form {
+    padding: 7% 0;
+}
+
 button{
     background-color: #810000;
     padding: 10px 20px;
@@ -72,3 +113,25 @@ button{
     border: none;
     border-radius: 5px;
 }
+
+footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+footer, p {
+    display: flex;
+    justify-content: space-between;
+}
+
+/****** STICKY FOOTER START ******/
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  .site-content {
+    flex: 1;
+  }
+  /****** STICKY FOOTER END ******/
