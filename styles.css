@@ -16,8 +16,8 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: 100%;
-    font: inherit;
+    /* font-size: 100%; */
+    /* font: inherit; */
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -43,11 +43,8 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-/* CUSTOM CSS */
-
+/* Custom CSS */
 /* HOME PAGE*/
-
 body{
    background-image: url(Images/curtain.png);
 }
@@ -81,7 +78,38 @@ body{
     background-color: #800000;
     background-attachment: fixed;
     margin: auto;
+    background-size: cover;
+}
 
+header {
+    background-color: rgba(245, 245, 245);
+    padding: 30px 0px 30px 15px;
+}
+
+nav ul {
+    margin-right: 1.5%;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    padding: 0 20px;
+    margin-top: -1%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+p, button, ::placeholder, a {
+    font-family: 'Poppins', sans-serif;
 }
 
 main h1{
@@ -91,99 +119,80 @@ main h1{
 }
 
 #center{
-    height: 30vh;
-    background-color: rgb(0, 0, 0);
-    display: flex;
+    background-color: rgba(245, 245, 245);
+    display: grid;
     align-items: center;
     justify-content: center;
-    margin: 25vh 0vh;
+    margin: 35vh 0vh;
+    padding: 7% 15%;
+}
+
+#center p {
+    font-size: 1.5em  
 }
 
 #movie-title{
     height: 3em;
-    width: 25vw;
-    font-size: 1.2em;
-    padding-left: 4px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1.3em;
-    border: none;
 }
 
-#submit-button{
-    height: 3em;
-    font-size: 1.2em;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    font-size: 1.3em;
-    background-color: floralwhite;
-    border: none;
+#movie-form {
+    padding: 7% 0;
 }
 
-#submit-button:hover {
-    background-color: rgb(91, 2, 2);
-    color: floralwhite;
-}
-
-/* MOVIE PAGE */
-
-header{
-    background-color: white;
-}
-
-header ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: maroon;
-}
-  
-header ul li {
-    float: right;
-}
-  
-li a {
-    display: block;
+button{
+    background-color: #810000;
+    padding: 10px 20px;
     color: white;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    border: none;
+    border-radius: 5px;
 }
+
+footer {
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+footer, p {
+    display: flex;
+    justify-content: space-between;
+}
+
+/***** Film-Info Styling *******/
+
+
+#film-info p {
+    color: white;
+    font-size: 1.2em;
+}
+
+#film-info h2 {
+    color: white;
+    font-size: 3em;
+}
+
+
+/***** Theaters-Info Styling *******/
+#theaters{
+    display: grid;
+    padding: 50px;
+    gap: 20px;
+    color: white;
+}
+#theaters > div{
+    display: flex;
+}
+#theaters img{
+    padding-right: 20px;
+}
+
+/****** STICKY FOOTER START ******/
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
   
-li a:hover {
-    background-color: rgb(91, 2, 2);
-}
-
-
-@media screen and (min-width: 900px){
-    #movie-info{
-        display: flex;
-    }
-    
-    #poster-section{
-        flex: 1;
-        background-color: white;
-    }
-    
-    #trailer-section{
-        flex: 2;
-        background-color: green;
-    }
-}
-@media screen and (max-width: 900px){
-    #movie-info{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-#poster-section{
-    background-color: white;
-}
-
-#trailer-section{
-    background-color: green;
-}
-
+  .site-content {
+    flex: 1;
+  }
+  /****** STICKY FOOTER END ******/
