@@ -82,7 +82,7 @@ body{
 }
 
 header {
-    background-color: rgba(245, 245, 245);
+    background-color: #f5f5f5;
     padding: 30px 0;
 }
 
@@ -110,7 +110,7 @@ a {
 h1 {
     font-family: 'Fira Sans', sans-serif;
     font-size: 2.5em;
-    color: black;
+    color: #000000;
     text-align: center;
 }
 
@@ -120,12 +120,12 @@ h2, p, button, ::placeholder, a {
 
 main h1{
     text-align: center;
-    color: floralwhite;
+    color: #fffaf0;
     padding-top: 15vh;
 }
 
 #center{
-    background-color: rgba(245, 245, 245);
+    background-color: #f5f5f5;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -155,7 +155,7 @@ main h1{
 button {
     background-color: #810000;
     padding: 10px 20px;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     margin-left: 1.5%;
@@ -259,18 +259,16 @@ footer, p {
     }
 }
 
-/***** Film-Info Styling *******/
-
-
+/* FILM INFO**/
 #film-info p {
-    color: white;
+    color: #ffffff;
     font-size: 1.2em;
     text-align: center;
     padding: 10px 2% 15px;
 }
 
 #film-info h2 {
-    color: white;
+    color: #ffffff;
     font-size: 3em;
     text-align: center;
     padding: 20px 15px;
@@ -299,12 +297,12 @@ footer, p {
 }
 
 
-/***** Theaters-Info Styling *******/
+/*THEATER INFO */
 #theaters{
     display: grid;
     padding: 50px;
     gap: 20px;
-    color: white;
+    color: #ffffff;
 }
 
 #theaters > div{
@@ -316,7 +314,7 @@ footer, p {
     max-width: 25%;
 }
 
-/****** STICKY FOOTER START ******/
+/* STICKY FOOTER  */
 .site {
     display: flex;
     min-height: 100vh;
@@ -329,7 +327,7 @@ footer, p {
 
 /* ABOUT PAGE */
 aside {
-    background-color: white;
+    background-color: #ffffff;
     max-width: 90%;
     margin: 30px auto;
     padding: 3%;
@@ -345,7 +343,7 @@ aside p{
 }
 
 aside ul{
-    background-color: white;
+    background-color: #ffffff;
     display: block;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
