@@ -1,7 +1,6 @@
 const form = document.getElementById('movie-form');
 const center=document.getElementById('center');
-const movieInfo=document.getElementById('movieinfo'); //from film page
-
+const errorEl=document.getElementById('error')
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -14,15 +13,11 @@ form.addEventListener('submit', async (e) => {
         const res = await fetch(fetchURL)
         if (res.status !== 200) throw new Error('Movie not found')
         const data = await res.json()
-        //console.log(data)
         localStorage.setItem("film", JSON.stringify(data))
-        //renderedMovie(data);
         location = "film.html"
     } catch (error) {
-        // center.innerHTML=''
-        // center.textContent=error.message
-        // center.appendChild(h2)
-        // form.search.value=''
+        filmInfo.innerHTML=`
+        <h2>${error.message}</h2>`
     }
 })
 

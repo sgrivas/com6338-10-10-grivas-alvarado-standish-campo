@@ -3,15 +3,14 @@ async function inTheaters(){
     const fetchURL = `https://imdb-api.com/en/API/InTheaters/k_4767vl9u`
     try {
         const res = await fetch(fetchURL)
-        if (res.status !== 200) throw new Error('Movie not found')
+        if (res.status !== 200) throw new Error('Movies not found')
         const data = await res.json()
         console.log(data)
         renderedMovie(data);
     } catch (error) {
-        // center.innerHTML=''
-        // center.textContent=error.message
-        // center.appendChild(h2)
-        // form.search.value=''
+        inTheatersEl.innerHTML=`
+        <h1>${error.message}</h1>
+        `
     }
 }
 inTheaters();
@@ -26,6 +25,7 @@ const renderedMovie = ({
     ]
 }) => {
     inTheatersEl.innerHTML=`
+    <h1>In Theaters</h1>
     <div>
     <img src="${item1.image}">
     <div>

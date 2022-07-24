@@ -68,6 +68,7 @@ ul {
     justify-content: center;
     margin-top: 20px;
     font-size: 1.2rem;
+    gap: 15px;
 }
 
 a {
@@ -122,6 +123,11 @@ button {
     border: none;
     border-radius: 5px;
     margin-left: 1.5%;
+    cursor: pointer;
+    transition: .3s;
+}
+button:hover{
+    background-color: grey;
 }
 
 footer {
@@ -268,14 +274,43 @@ h1 {
 #theaters{
     display: grid;
     padding: 50px;
-    gap: 20px;
+    gap: 40px;
     color: white;
 }
 #theaters > div{
-    display: flex;
+    display: grid;
+    gap: 20px;
 }
 #theaters img{
     padding-right: 20px;
+    max-width: 100%;
+}
+#theaters p{
+    padding-top: 10px;
+    color: white;
+}
+@media (min-width: 900px) {
+    #theaters > div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/***** About Styling *******/
+.about{
+    padding: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.about h1,
+#theaters h1{
+    color: white;
+    padding: 0;
+}
+.about p{
+    color: white;
+}
+.about aside{
+    padding-bottom: 40px;
 }
 
 /****** STICKY FOOTER START ******/
