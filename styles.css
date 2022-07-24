@@ -313,6 +313,7 @@ footer, p {
 
 #theaters img{
     padding-right: 20px;
+    max-width: 25%;
 }
 
 /****** STICKY FOOTER START ******/
