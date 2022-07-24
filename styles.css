@@ -135,49 +135,55 @@ footer {
     padding: 10px;
 }
 
+footer p {
+    color: #af1313;
+    font-weight: bold;
+}
+
 footer, p {
     display: flex;
     justify-content: space-around;
-    color: #af1313;
-    font-weight: bold;
 }
 
 @media (min-width: 400px) {
     footer, p {
         justify-content: space-between;
     }
-    }
+}
 
 @media (min-width: 750px) {
-header {
-    padding: 40px 0;
-}
-ul {
-    justify-content: right;
-    padding: 0 20px;
-    margin-top: -4%;
-}
-h1 {
-    text-align: left;
-    padding-left: 2.5%;
-    font-size: 3em;
-}
-#center h2 {
-    font-size: 1.8em;
-}
-#movie-form {
-    display: flex;
-    justify-content: center;
-}
-#movie-title {
-    width: 250px;
-}
-}
-
-@media (min-width: 900px) {
+    header {
+        padding: 40px 0;
+    }
+    ul {
+        justify-content: right;
+        padding: 0 20px;
+        margin-top: -4%;
+    }
+    ul li {
+        margin: 0 8px;
+    }
+    h1 {
+        text-align: left;
+        padding-left: 2.5%;
+        font-size: 3em;
+    }
     #center h2 {
-        font-size: 2em;
-}
+        font-size: 1.8em;
+    }
+    #movie-form {
+        display: flex;
+        justify-content: center;
+    }
+    #movie-title {
+        width: 250px;
+    }
+    }
+
+    @media (min-width: 900px) {
+        #center h2 {
+            font-size: 2em;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -228,11 +234,7 @@ h1 {
     }
 }
 
-
-
-
 /***** Film-Info Styling *******/
-
 
 #film-info p {
     color: white;
@@ -262,55 +264,178 @@ h1 {
     #film-info img {
         width: 450px;
     }
-    }
+}
     @media (min-width: 900px) {
     #film-info p {
         max-width: 550px;
     }
-    }
-
+}
 
 /***** Theaters-Info Styling *******/
-#theaters{
+#theaters {
     display: grid;
     padding: 50px;
     gap: 40px;
     color: white;
 }
-#theaters > div{
+#theaters h2 {
+    text-align: center;
+}
+#theaters > div {
     display: grid;
+    justify-items: center;
     gap: 20px;
 }
-#theaters img{
+#theaters img {
     padding-right: 20px;
     max-width: 100%;
 }
-#theaters p{
+#theaters p {
     padding-top: 10px;
     color: white;
+    text-align: center;
 }
 @media (min-width: 900px) {
-    #theaters > div{
+    #theaters > div {
         grid-template-columns: repeat(2, 1fr);
+        width: 650px;
+        margin: 0 auto;
+    }
+    #theaters h2 {
+        text-align: left;
+    }
+    #theaters p {
+        text-align: left;
+    }
+    div h2 {
+        padding-top: 8px;
     }
 }
 
 /***** About Styling *******/
-.about{
+.about {
     padding: 50px;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
 .about h1,
-#theaters h1{
+#theaters h1 {
     color: white;
-    padding: 0;
+    padding-bottom: 20px;
 }
-.about p{
+.about p {
     color: white;
+    text-align: center;
 }
-.about aside{
+.about aside {
     padding-bottom: 40px;
+}
+aside h2 {
+    padding-bottom: 10px;
+}
+aside h2, aside ol {
+    text-align: center;
+}
+ol li {
+    padding: 5px 0;
+}
+.about-page-images figure img {
+    max-width: 100%;
+    padding: 10px 0;
+}
+@media (min-width: 530px) {
+    .about-page-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-page-images img {
+        width: 414px;
+    }
+}
+@media (min-width: 750px) {
+    .about {
+        margin-top: 15px;
+    }
+    .about p, .about h2, .about ol {
+        text-align: left;
+        margin-left: 15px;
+    }
+.about-page-images {
+    align-items: flex-end;
+    margin: -219px 18px 0px 0px
+    }
+}
+@media (min-width: 900px) {
+    .about p, .about h2, .about ol {
+        margin-left: 25px;
+    }
+}
+
+@media (min-width: 1050px) {
+    .about p {
+        width: 500px;
+    }
+    .about-page-images {
+        margin: -324px 1px 0px 0px;
+    }
+}
+@media (min-width: 1200px) {
+    .about aside p {
+        margin-top: 10px;
+    }
+    .about {
+        margin-top: 50px;
+    }
+    .about-page-images {
+        margin-right: 65px;
+    }
+}
+@media (min-width: 1300px) {
+    .about aside {
+        margin-left: 100px;
+    }
+    .about aside p, .about aside ol {
+        font-size: 1.3em;
+    }
+    .about-page-images {
+        margin: -409px 100px 0px 0px;
+    }
+}
+@media (min-width: 1450px) {
+    .about aside {
+        margin-left: 100px;
+    }
+    .about p, .about h2, .about ol {
+        margin-left: 30px;
+    }
+    .about-page-images {
+        margin-right: 230px;
+    }
+}
+@media (min-width: 1550px) {
+    .about aside {
+        margin-left: 200px;
+    }
+    .about-page-images {
+        margin-right: 215px;
+    }
+}
+@media (min-width: 1650px) {
+    .about aside {
+        margin-left: 300px;
+    }
+    .about-page-images {
+        margin-right: 225px;
+    }
+}
+@media (min-width: 1850px) {
+    .about aside {
+        margin-left: 400px;
+    }
+    .about-page-images {
+        margin-right: 390px;
+    }
 }
 
 /****** STICKY FOOTER START ******/
