@@ -56,7 +56,7 @@ body{
 
 header {
     background-color: rgba(245, 245, 245);
-    padding: 30px 0px 30px 15px;
+    padding: 30px 0;
 }
 
 nav ul {
@@ -65,23 +65,25 @@ nav ul {
 
 ul {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
 }
 
-ul li {
-    padding: 0 20px;
-    margin-top: -1%;
-}
-
-li a {
+a {
     text-decoration: none;
+    color: #ad1313;
+    font-weight: bold;
 }
 
 h1 {
     font-family: 'Fira Sans', sans-serif;
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
 }
 
-p, button, ::placeholder, a {
+h2, p, button, ::placeholder, a {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -94,8 +96,14 @@ p, button, ::placeholder, a {
     padding: 7% 15%;
 }
 
-#center p {
-    font-size: 1.5em  
+.center-images img {
+    display: none;
+}
+
+#center h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #af1313;
 }
 
 #movie-title{
@@ -104,14 +112,16 @@ p, button, ::placeholder, a {
 
 #movie-form {
     padding: 7% 0;
+    display: flex;
 }
 
-button{
+button {
     background-color: #810000;
     padding: 10px 20px;
     color: white;
     border: none;
     border-radius: 5px;
+    margin-left: 1.5%;
 }
 
 footer {
@@ -121,8 +131,99 @@ footer {
 
 footer, p {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    color: #af1313;
+    font-weight: bold;
 }
+
+@media (min-width: 400px) {
+    footer, p {
+        justify-content: space-between;
+    }
+    }
+
+@media (min-width: 750px) {
+header {
+    padding: 40px 0;
+}
+ul {
+    justify-content: right;
+    padding: 0 20px;
+    margin-top: -4%;
+}
+h1 {
+    text-align: left;
+    padding-left: 2.5%;
+    font-size: 3em;
+}
+#center h2 {
+    font-size: 1.8em;
+}
+#movie-form {
+    display: flex;
+    justify-content: center;
+}
+#movie-title {
+    width: 250px;
+}
+}
+
+@media (min-width: 900px) {
+    #center h2 {
+        font-size: 2em;
+}
+}
+
+@media (min-width: 1000px) {
+    .center-images img {
+        display: block;
+        width: 170px;
+    }
+    .center-images {
+        display: flex;
+        justify-content: space-between;
+        margin: -60px -270px -130px
+    }
+}
+
+@media (min-width: 1300px) {
+    header {
+        padding: 55px 0;
+    }
+    h1 {
+        font-size: 4em;
+    }
+    nav a {
+        font-size: 1.3em;
+    }
+    .center-images {
+        margin: -90px -420px -160px;
+    }
+    .center-images img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1600px) {
+    header {
+        padding: 70px 0;
+    }
+    .center-images {
+        margin: -130px -550px -220px;
+    }
+}
+
+@media (min-width: 1800px) {
+    header h1 {
+        margin-bottom: 20px;
+    }
+    .center-images {
+        margin: -100px -635px -195px;
+    }
+}
+
+
+
 
 /***** Film-Info Styling *******/
 
@@ -130,12 +231,37 @@ footer, p {
 #film-info p {
     color: white;
     font-size: 1.2em;
+    text-align: center;
+    padding: 10px 2% 15px;
 }
 
 #film-info h2 {
     color: white;
     font-size: 3em;
+    text-align: center;
+    padding: 20px 15px;
 }
+
+#film-info img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 400px) {
+    #film-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #film-info img {
+        width: 450px;
+    }
+    }
+    @media (min-width: 900px) {
+    #film-info p {
+        max-width: 550px;
+    }
+    }
 
 
 /***** Theaters-Info Styling *******/
